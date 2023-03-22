@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-article-link',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./article-link.component.css']
 })
 export class ArticleLinkComponent {
-
+@Input() topic!: string;
 }

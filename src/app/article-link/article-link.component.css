@@ -1,0 +1,17 @@
+#article-link{
+    background: #ffffff;
+    border: 1px solid #C9C9C9;
+    height: 45px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-right: 23px ;
+    margin-bottom: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
