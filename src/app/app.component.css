@@ -1,0 +1,20 @@
+p{
+    position: absolute;
+    top: 338px ;
+    font-family: 'Poppins';
+    font-size: 20px;
+}
+#body{
+    position: absolute;
+    top: 368px;
+    border: black solid 1px;
+    display: flex;
+	flex-direction: column;
+    width: 70vw;
+    height: auto;
+}
+.element{
+    border: black solid 1px;
+    height: 120px ;
+    margin-top: 20px;
+}
