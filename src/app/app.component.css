@@ -1,13 +1,10 @@
-p{
-    position: absolute;
-    top: 338px ;
+#last-pub{
     font-family: 'Poppins';
     font-size: 20px;
 }
 #body{
     position: absolute;
     top: 368px;
-    border: black solid 1px;
     display: flex;
     width: 100%;
     height: auto;
@@ -15,7 +12,6 @@ p{
     justify-content: center;
 }
 #list{
-    border: black solid 1px;
     display: flex;
     flex-direction: column;
     width: 700px;
@@ -27,7 +23,6 @@ p{
     margin-left: 30px;
 }
 .element{
-    border: black solid 1px;
     height: 120px ;
     margin-top: 20px;
 }
