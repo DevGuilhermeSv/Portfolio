@@ -13,13 +13,45 @@ export class AppComponent {
         id: 1,
         title:"Gerando e aplicando migrations com .Net 6",
         data: "22/03",
-        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional"
-    },
+        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+        img:"../../assets/icons/NET_Core_Logo.svg.png"
+      },
     {
         id: 2,
         title:"Gerando e aplicando migrations com .Net 6",
         data: "22/03",
-        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional"
-    }
+        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+        img:"../../assets/icons/NET_Core_Logo.svg.png"
+    },
+    
+    {
+      id: 3,
+      title:"Gerando e aplicando migrations com .Net 6",
+      data: "22/03",
+      description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+      img:"../../assets/icons/NET_Core_Logo.svg.png"
+  },
+  
+    {
+      id: 4,
+      title:"Gerando e aplicando migrations com .Net 6",
+      data: "22/03",
+      description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+      img:"../../assets/icons/NET_Core_Logo.svg.png"
+    },
+    {
+        id: 5,
+        title:"Gerando e aplicando migrations com .Net 6",
+        data: "22/03",
+        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+        img:"../../assets/icons/NET_Core_Logo.svg.png"
+    },
+    {
+        id: 6,
+        title:"Gerando e aplicando migrations com .Net 6",
+        data: "22/03",
+        description:"Como gerar migrations a partidar de um modelo e aplicar para um banco de dados relacional",
+        img:"../../assets/icons/NET_Core_Logo.svg.png"
+  }
 ];
 }

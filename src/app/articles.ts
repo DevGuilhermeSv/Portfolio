@@ -4,4 +4,5 @@ export interface Articles
     title: string;
     description: string;
     data: string;
+    img: string;
 }
