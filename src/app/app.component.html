@@ -5,10 +5,9 @@
   <div id="body">
     <div id="list" >
       <div class="element" *ngFor="let art of articles"> 
-      <app-element-list>
-        [article] = art
-      </app-element-list>
-    </div>
+        <app-element-list [article]="art">
+        </app-element-list>
+      </div>
       
     </div>
    <div id="topics">
