@@ -9,9 +9,22 @@ p{
     top: 368px;
     border: black solid 1px;
     display: flex;
-	flex-direction: column;
-    width: 70vw;
+    width: 100%;
     height: auto;
+    align-items: center;
+    justify-content: center;
+}
+#list{
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+#topics{
+    border: black solid 1px;
+    width: 300px;
+    height: 300px;
+    margin-left: 30px;
 }
 .element{
     border: black solid 1px;

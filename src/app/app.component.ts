@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HeaderComponent } from './header/header.component';
-
+import { art } from './articles';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,4 +8,5 @@ import { HeaderComponent } from './header/header.component';
 })
 export class AppComponent {
   title = 'portfolioAngular';
+  articles = art;
 }

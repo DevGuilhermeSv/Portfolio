@@ -3,8 +3,16 @@
   <app-welcome></app-welcome>
   <p>Ultimas Publicações</p>
   <div id="body">
-    <div class="element"> <app-element-list></app-element-list></div>
-    <div class="element"> <app-element-list></app-element-list></div>
-    <div class="element"> <app-element-list></app-element-list></div>
+    <div id="list" >
+      <div class="element" *ngFor="let art of articles"> 
+      <app-element-list>
+        [article] = art
+      </app-element-list>
+    </div>
+      
+    </div>
+   <div id="topics">
+
+   </div>
   </div>
 
