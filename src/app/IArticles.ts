@@ -5,4 +5,5 @@ export interface Articles
     description: string;
     data: string;
     img: string;
+    content:string;
 }

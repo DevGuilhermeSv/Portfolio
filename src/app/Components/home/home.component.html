@@ -1,0 +1,8 @@
+<div id="list" >
+    <div id="last-pub">Ultimas Publicações</div>
+    <div class="element" *ngFor="let art of articles"> 
+      <app-element-list [article]="art">
+      </app-element-list>
+    </div>
+    
+  </div>

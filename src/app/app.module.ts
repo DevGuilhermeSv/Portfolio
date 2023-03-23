@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { ElementListComponent } from './element-list/element-list.component';
-import { HeaderComponent } from './header/header.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { ArticleLinkComponent } from './article-link/article-link.component';
+import { ElementListComponent } from './Components/element-list/element-list.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { WelcomeComponent } from './Components/welcome/welcome.component';
+import { ArticleLinkComponent } from './Components/article-link/article-link.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ArticleComponent } from './Components/Articles/article/article.component';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { ArticleLinkComponent } from './article-link/article-link.component';
     ElementListComponent,
     HeaderComponent,
     WelcomeComponent,
-    ArticleLinkComponent
+    ArticleLinkComponent,
+    ArticleComponent,
+    HomeComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

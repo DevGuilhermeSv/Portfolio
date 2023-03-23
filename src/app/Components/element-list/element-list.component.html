@@ -1,6 +1,6 @@
 <div id="element">
     <div id="content">
-        <a href="http://">
+        <a [routerLink]="['/article',article.id]">
             <div id="title">{{article.title}}</div>
             <div id="description">{{article.description}}</div>
         </a>

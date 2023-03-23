@@ -1,7 +1,4 @@
-#last-pub{
-    font-family: 'Poppins';
-    font-size: 20px;
-}
+
 #body{
     position: absolute;
     top: 368px;
@@ -10,11 +7,6 @@
     height: auto;
     align-items: flex-start;
     justify-content: center;
-}
-#list{
-    display: flex;
-    flex-direction: column;
-    width: 700px;
 }
 #topics{
     max-width: 350px;
@@ -30,8 +22,4 @@
     line-height: 30px;
     width: 100%;
     margin-bottom: 21px;
-}
-.element{
-    height: 120px ;
-    margin-top: 20px;
 }
