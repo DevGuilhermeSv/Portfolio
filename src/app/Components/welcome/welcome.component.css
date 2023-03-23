@@ -4,6 +4,7 @@
     height: 244px;
     left: 0px;
     top: 104px;
+    border-bottom: #000000 solid 1px;
 }
 #welcome::before {    
     content: "";

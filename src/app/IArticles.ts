@@ -6,4 +6,5 @@ export interface Articles
     data: string;
     img: string;
     content:string;
+    topic:string
 }
