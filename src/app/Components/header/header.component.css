@@ -33,7 +33,7 @@
 #content div:nth-child(1){
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     cursor: pointer;
 }
 img{

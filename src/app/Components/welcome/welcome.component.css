@@ -8,7 +8,7 @@
 }
 #welcome::before {    
     content: "";
-    background-image:url(../../../assets/icons/background.jpg) ;
+    background-image:url(/assets/icons/background.jpg) ;
     background-size: cover;
     opacity: 0.3;
     position: absolute;
