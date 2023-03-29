@@ -7,6 +7,23 @@
 img{
     max-width: 90vw;
 }
+.title{
+        
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    color: #50372B;
+    
+    }
+    .sub-title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 44px;
+    color: #50372B;
+    }
 @media only screen and (min-width:600px){
     #article{
         width: 100%;
@@ -15,21 +32,8 @@ img{
         margin-top: 0px;
     }
     .title{
-        
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
+        font-weight: 400;
     font-size: 48px;
     line-height: 66px;
-    color: #50372B;
-    
-    }
-    .sub-title{
-    font-family: 'DM Serif Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 44px;
-    color: #50372B;
     }
 }
