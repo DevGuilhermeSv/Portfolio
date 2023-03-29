@@ -1,12 +1,11 @@
-
 #body{
     position: absolute;
-    top: 368px;
+    top: 270px;
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: auto;
     align-items: flex-start;
-    justify-content: center;
 }
 #topics{
     max-width: 350px;
@@ -22,4 +21,16 @@
     line-height: 30px;
     width: 100%;
     margin-bottom: 21px;
+}
+
+@media only screen and (min-width:600px){
+    #body{
+        top: 368px;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    
 }
