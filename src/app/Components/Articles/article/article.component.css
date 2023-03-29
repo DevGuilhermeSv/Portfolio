@@ -1,24 +1,35 @@
 #article{
     background: #FFEFE8;
-    width: 100%;
+    width: 95%;
     height: auto;
-    width: 700px;
+    margin-top: 20px;
 }
-.title{
+img{
+    max-width: 90vw;
+}
+@media only screen and (min-width:600px){
+    #article{
+        width: 100%;
+        height: auto;
+        width: 700px;
+        margin-top: 0px;
+    }
+    .title{
+        
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 66px;
+    color: #50372B;
     
-font-family: 'DM Serif Display';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 66px;
-color: #50372B;
-
-}
-.sub-title{
-font-family: 'DM Serif Display';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 44px;
-color: #50372B;
+    }
+    .sub-title{
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    color: #50372B;
+    }
 }
