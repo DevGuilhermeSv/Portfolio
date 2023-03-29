@@ -2,7 +2,8 @@
 #list{
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 100vw;
+    align-items: center;
 }
 #last-pub{
     font-family: 'Poppins';
@@ -11,4 +12,15 @@
 .element{
     height: 120px ;
     margin-top: 20px;
+    margin-right: 20px;
+}
+/* Desktop view */
+@media only screen and (min-width:600px) {
+    #list{
+        width: 700px;
+        align-items: flex-start;
+    }
+    .element{
+        margin-right: 0px;
+    }
 }
