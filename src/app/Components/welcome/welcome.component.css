@@ -1,7 +1,7 @@
 #welcome{
     position: absolute;
     width: 100vw;
-    height: 244px;
+    height: 170px;
     left: 0px;
     top: 104px;
     border-bottom: #000000 solid 1px;
@@ -17,38 +17,20 @@
     bottom: 0px;
     left: 0px;
 }
-#group16{
-    position: absolute;
-    height: 203px;
-    left: 201px;
-    top: 104px;
-
-
-}
-.content{
-    
-position: absolute;
-width: 937px;
-height: 170px;
-left: 201px;
-top: 104px;
-}
-/* Mais conteudo? Me siga nas redes sociais! */
 #content-1{
 /* Mais conteudo? */
 
 position: absolute;
-width: 485px;
-height: 138px;
-left: 202px;
-top: 126px;
+width: 240px;
+height: 46px;
+left: 13px;
+top: 117px;
 
 font-family: 'Abril Fatface';
 font-style: normal;
 font-weight: 400;
-font-size: 64px;
-line-height: 86px;
-
+font-size: 32px;
+line-height: 43px;
 color: #000000;
 }
 #content-2{
@@ -58,14 +40,14 @@ color: #000000;
 position: absolute;
 width: 489px;
 height: 43px;
-left: 205px;
-top: 205px;
+left: 13px;
+top: 163px;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 30px;
+font-size: 14px;
+line-height: 21px;
 
 color: #000000;
 }
@@ -73,34 +55,82 @@ color: #000000;
 #frame12{
     /* Frame 12 */
 
-position: absolute;
-width: 65px;
-height: 65px;
-left: 274px;
-top: 242px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 14px;
+    top: 188px;
 }
 #frame12 img{
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    left: 0.5px;
-    top: 0px;
+    width: 40px;
+    height: 40px;
 }
 #frame11 img{
-    position: absolute;
-width: 65px;
-height: 65px;
-left: 0.5px;
-top: 0px;
+    width: 40px;
+    height: 40px;
 }
 #frame11{
     /* Frame 11 */
 
-position: absolute;
-width: 65px;
-height: 65px;
-left: 201px;
-top: 242px;
-
-
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 63px;
+    top: 188px;
+}
+@media only screen and (min-width: 600px)
+{
+    #welcome{
+        height: 240px;
+    }
+    
+    #content-1{
+    /* Mais conteudo? */
+    
+    width: 485px;
+    height: 138px;
+    left: 202px;
+    top: 126px;
+   
+    font-size: 64px;
+    line-height: 86px;
+    }
+    #content-2{
+    
+    /* Me siga nas redes sociais! */
+    
+    height: 43px;
+    left: 205px;
+    top: 205px;
+   
+    font-size: 20px;
+    line-height: 30px;
+    
+    }
+    
+    #frame12{
+        /* Frame 12 */
+    width: 65px;
+    height: 65px;
+    left: 274px;
+    top: 242px;
+    }
+    #frame12 img{
+      
+        width: 65px;
+        height: 65px;
+      
+    }
+    #frame11 img{
+     
+    width: 65px;
+    height: 65px;
+    }
+    #frame11{
+    width: 65px;
+    height: 65px;
+    left: 201px;
+    top: 242px;
+    
+    }
 }
