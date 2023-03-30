@@ -9,6 +9,7 @@ import { ArticleLinkComponent } from './Components/article-link/article-link.com
 import { AppRoutingModule } from './app-routing.module';
 import { ArticleComponent } from './Components/Articles/article/article.component';
 import { HomeComponent } from './Components/home/home.component';
+import { TopicsComponent } from './Components/topics/topics.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HomeComponent } from './Components/home/home.component';
     ArticleLinkComponent,
     ArticleComponent,
     HomeComponent,
+    TopicsComponent,
   ],
   imports: [
     BrowserModule,

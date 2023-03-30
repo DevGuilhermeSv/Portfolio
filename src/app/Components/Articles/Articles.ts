@@ -7,6 +7,7 @@ export const articlesList: Articles[] = [
     data: "27/03",
     description: "Como publicar seu aplicativo .Net na web de forma facil e gratuita utilizando o Fly.io",
     img: "/assets/icons/NET_Core_Logo.svg.png",
+    topics:["dotnet","devops"],
     content: `<div class="content">
     <p>
     Como meu primeiro post depois da minha apresentação ( se ainda não viu, confira minha primeira publicação onde eu falo um pouco sobre mim e sobre as minhas expectativas com esse novo formato de portfólio) hoje vou apresentar para vocês um método muito simples e GRATUITO de como fazer deploy da sua aplicação .NET utilizando a plataforma do Fly.io.
@@ -139,6 +140,7 @@ export const articlesList: Articles[] = [
     data: "23/03",
     description: "Quem sou, oque faço e quais as minhas experiências. Falerei um pouco sobre mim e sobre este meu novo espaço...",
     img: "",
+    topics:["primeiros+passos"],
     content: `
     <div class="content">
     <p> Ja fazia muito tempo que eu planejava atualizar meu portólio, e tambem sempre tive vontade de apresentar para as pessoas os 
