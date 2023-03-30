@@ -3,7 +3,8 @@
 #header{
     /* Header */
     box-sizing: border-box;
-    position: absolute;
+    z-index: 100;
+    position: fixed;
     width: 100vw;
     height: 104px;
     left: 0px;
