@@ -1,3 +1,3 @@
-<div id="article-link">
-    {{topic}}
+<div [routerLink]="['/']" [queryParams]="{ topic: topic.formatedName}" id="article-link">
+    {{topic.name}}
 </div>
