@@ -132,7 +132,6 @@ export const articlesList: Articles[] = [
         </p>
 
     </div>  `,
-    topic: 'dotnet'
   },
   {
     id: 1,
@@ -186,6 +185,5 @@ export const articlesList: Articles[] = [
     <p>Tchau tchau :) </p>
     </div>`
     ,
-    topic: ''
   }
 ]

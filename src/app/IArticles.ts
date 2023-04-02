@@ -7,5 +7,4 @@ export interface Articles
     img: string;
     content:string;
     topics: string[];
-    topic:string
 }
