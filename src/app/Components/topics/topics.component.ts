@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Itopics } from './Itopics';
-import { topicsArray } from './topics';
+import { Itopics } from '../../Interfaces/Itopics';
+import { topicsArray } from '../../Repositories/topics';
 @Component({
   selector: 'app-topics',
   templateUrl: './topics.component.html',

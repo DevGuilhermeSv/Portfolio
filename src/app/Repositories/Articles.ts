@@ -1,6 +1,6 @@
-import { Articles } from "src/app/IArticles";
+import { IArticles } from "src/app/Interfaces/IArticles";
 
-export const articlesList: Articles[] = [
+export const articlesList: IArticles[] = [
   {
     id: 2,
     title: "Fazendo deploy da sua aplicação .NET com Fly.io",
@@ -139,7 +139,7 @@ export const articlesList: Articles[] = [
     data: "23/03",
     description: "Quem sou, oque faço e quais as minhas experiências. Falerei um pouco sobre mim e sobre este meu novo espaço...",
     img: "",
-    topics:["primeiros+passos"],
+    topics:["primeirospassos"],
     content: `
     <div class="content">
     <p> Ja fazia muito tempo que eu planejava atualizar meu portólio, e tambem sempre tive vontade de apresentar para as pessoas os 

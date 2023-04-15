@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Articles } from 'src/app/IArticles';
-import { articlesList } from '../Articles/Articles';
-import { Itopics } from '../topics/Itopics';
-import { topicsArray } from '../topics/topics';
+import { IArticles } from 'src/app/Interfaces/IArticles';
+import { articlesList } from '../../Repositories/Articles';
+import { Itopics } from '../../Interfaces/Itopics';
+import { topicsArray } from '../../Repositories/topics';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  articles: Articles[];
+  articles: IArticles[];
   constructor(private route: ActivatedRoute) {
     this.articles = articlesList;
   }

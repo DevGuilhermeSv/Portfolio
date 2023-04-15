@@ -1,4 +1,4 @@
-import { Itopics } from "./Itopics"
+import { Itopics } from "../Interfaces/Itopics"
 
 export const topicsArray: Itopics[] = [{
   formatedName:'dotnet',
@@ -10,7 +10,7 @@ export const topicsArray: Itopics[] = [{
   formatedName:'devops',
   name:'DevOps'
 },{
-  formatedName:'Primeirospassos',
+  formatedName:'primeirospassos',
   name:'Primeiros Passos'
 },
 {
