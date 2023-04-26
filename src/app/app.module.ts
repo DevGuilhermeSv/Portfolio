@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ArticleComponent } from './Components/Articles/article/article.component';
 import { HomeComponent } from './Components/home/home.component';
 import { TopicsComponent } from './Components/topics/topics.component';
+import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
 
 @NgModule({
   declarations: [
@@ -23,10 +24,17 @@ import { TopicsComponent } from './Components/topics/topics.component';
     TopicsComponent,
   ],
   imports: [
+    HighlightModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [{
+    provide: HIGHLIGHT_OPTIONS,
+    useValue: {
+      fullLibraryLoader: () => import('highlight.js'),
+      themePath: 'assets/styles/base16/dracula.css',
+    }
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
