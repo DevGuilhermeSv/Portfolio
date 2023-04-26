@@ -1,39 +1,55 @@
-#article{
+#article {
     background: #FFEFE8;
     width: 95%;
     height: auto;
     margin-top: 20px;
+    padding: 30px;
 }
-img{
+
+img {
     max-width: 90vw;
 }
-.title{
-        
+
+code {
+    color: #ff7a3c;
+    background-color: black;
+}
+
+.title {
+
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
     color: #50372B;
-    
-    }
-    .sub-title{
+
+}
+
+.sub-title {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 44px;
     color: #50372B;
-    }
-@media only screen and (min-width:600px){
-    #article{
+}
+
+.content {
+    font-family: 'Poppins';
+    font-size: large;
+}
+
+@media only screen and (min-width:600px) {
+    #article {
         width: 100%;
         height: auto;
         width: 700px;
         margin-top: 0px;
     }
-    .title{
+
+    .title {
         font-weight: 400;
-    font-size: 48px;
-    line-height: 66px;
+        font-size: 48px;
+        line-height: 66px;
     }
 }
