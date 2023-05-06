@@ -11,6 +11,7 @@ import { ArticleComponent } from './Components/Articles/article/article.componen
 import { HomeComponent } from './Components/home/home.component';
 import { TopicsComponent } from './Components/topics/topics.component';
 import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
+import { AticleService } from './Services/article.service';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
       fullLibraryLoader: () => import('highlight.js'),
       themePath: 'assets/styles/base16/dracula.css',
     }
-  }],
+  },
+AticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
