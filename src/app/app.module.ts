@@ -7,7 +7,7 @@ import { HeaderComponent } from './Components/header/header.component';
 import { WelcomeComponent } from './Components/welcome/welcome.component';
 import { ArticleLinkComponent } from './Components/article-link/article-link.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ArticleComponent } from './Components/Articles/article/article.component';
+import { ArticleComponent } from './Components/Articles/article.component';
 import { HomeComponent } from './Components/home/home.component';
 import { TopicsComponent } from './Components/topics/topics.component';
 import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';

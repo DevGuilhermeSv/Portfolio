@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { IArticles } from 'src/app/Interfaces/IArticles';
 import { articlesList } from '../../Repositories/Articles';
-import { Itopics } from '../../Interfaces/Itopics';
 import { topicsArray } from '../../Repositories/topics';
 @Component({
   selector: 'app-home',
@@ -17,11 +16,11 @@ export class HomeComponent {
   ngOnInit() {
     this.route.queryParams.subscribe(
       (params) => {
-        var name = params['topic'];
+        const name = params['topic'];
         if(name != undefined)
         {
-          var topic = topicsArray.find(element => element.formatedName == name);
-          var newarray = articlesList.filter((element) => {
+          const topic = topicsArray.find(element => element.formatedName == name);
+          const newarray = articlesList.filter((element) => {
             for (let index = 0; index < element.topics.length; index++) {
               const x = element.topics[index];
               if(x == topic?.formatedName)
