@@ -36,7 +36,7 @@ import { AticleService } from './Services/article.service';
       themePath: 'assets/styles/base16/dracula.css',
     }
   },
-AticleService],
+  AticleService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

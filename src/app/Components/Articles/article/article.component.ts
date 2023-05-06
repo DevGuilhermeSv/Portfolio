@@ -1,8 +1,8 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { articlesList } from '../../../Repositories/Articles';
-import { HighlightModule, HIGHLIGHT_OPTIONS, HighlightLoader, HighlightAutoResult } from 'ngx-highlightjs';
+import { HighlightLoader, HighlightAutoResult } from 'ngx-highlightjs';
 import { AticleService } from 'src/app/Services/article.service';
+import { IArticles } from 'src/app/Interfaces/IArticles';
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -10,7 +10,7 @@ import { AticleService } from 'src/app/Services/article.service';
   encapsulation: ViewEncapsulation.None
 })
 export class ArticleComponent {
-  article!: any;
+  article!: IArticles;
 
   
   constructor(private activatedRoute : ActivatedRoute,
@@ -20,7 +20,7 @@ export class ArticleComponent {
    console.log(e);
   }
   ngOnInit(): void { 
-   let articleId = this.activatedRoute.snapshot.paramMap.get("id");
+   const articleId = this.activatedRoute.snapshot.paramMap.get("id");
    if(articleId == null){
     throw new Error("id não identiicado");
    }
