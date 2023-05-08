@@ -2,6 +2,58 @@ import { IArticles } from "src/app/Interfaces/IArticles";
 
 export const articlesList: IArticles[] = [
   {
+    id:3,
+    content:`
+    <div class="content"> Se você estava procurando uma ferramenta para dar aquele destaque em trechos de códigos em uma pagina web, então você ja deve ter conhecido o HighLighJS.io
+    e como é complicado trabalhar com ele em determinados cenarios... 
+    Hoje quero apresentar para vocês uma solução que eu encontrei para utilizar os recursos do HighlightJS  quando a sua aplicação depende de uma pre-compilação porem seu conteudo depende
+    de "interpolação" do HTML como é o caso domeu projeto em Angular.
+    Eu mesmo levei um certo tempo para conseguir implementar o HighLighJS no meu portfólio e agora quero ajudar aqueles que estão à passar pelo mesmo problema. </div>
+    <br>
+    <div class="sub-title"> Oque é o HighLightjs?</div>
+    <div class="content">
+        Highlight.js é uma biblioteca javascript para destaque de sintaxe que funciona com inúmeras linguagens. 
+        Este funciona tanto no navegador como no servidor, não depende de nenhum outro framework e possui detecção automatica da linguagem.
+    </div>
+        <pre>
+
+      <code class="language-csharp" [innerHTML]="article.content">
+     public static List<DateTime> getPeriod(int month, int year)
+        {
+            var day = DateTime.Now.Day;
+            var lastmonth = month == 1 ? 12 : month - 1;
+
+            if (day == FindLastDayOfMonth(month))
+            {
+                day = FindLastDayOfMonth(lastmonth);
+            }
+
+            return getPeriod(day, month, year, day, lastmonth, year);
+        }
+         
+        </code>
+
+    </pre>
+    <div class="sub-title">importando biblioteca</div>
+    <div class="content"> 
+        <p>
+        A melhor maneira de trabalharmos com o HighlightJs no angular é importando a biblioteca via gerenciador de pacotes. 
+        para isso vamos utilizar o comando  <code> npm install highlight.js </code> ou <code> yarn add highlight.js </code>
+        </p>
+        <p> 
+        
+        </p>
+    </div>
+    `,
+    parameters:[`
+        `],
+    data:"",
+    description:"",
+    img:"",
+    title:"Implementando HighLightjs em aplicações angular",
+    topics:[]
+  },
+  {
     id: 2,
     title: "Fazendo deploy da sua aplicação .NET com Fly.io",
     data: "27/03",

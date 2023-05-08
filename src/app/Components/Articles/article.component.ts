@@ -1,8 +1,9 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HighlightLoader, HighlightAutoResult } from 'ngx-highlightjs';
 import { AticleService } from 'src/app/Services/article.service';
 import { IArticles } from 'src/app/Interfaces/IArticles';
+import hljs from 'highlight.js';
+
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
@@ -14,17 +15,18 @@ export class ArticleComponent {
 
   
   constructor(private activatedRoute : ActivatedRoute,
-    private hljsLoader: HighlightLoader,
     private articleService: AticleService) { }
-  onHighlight(e: HighlightAutoResult) {
-   console.log(e);
-  }
+
   ngOnInit(): void { 
+   
    const articleId = this.activatedRoute.snapshot.paramMap.get("id");
    if(articleId == null){
     throw new Error("id não identiicado");
    }
    this.article = this.articleService.getArticle(articleId);
 
+  }
+  ngAfterViewInit(){
+     hljs.highlightAll();
   }
 }

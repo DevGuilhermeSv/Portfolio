@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { ArticleComponent } from './Components/Articles/article.component';
 import { HomeComponent } from './Components/home/home.component';
 import { TopicsComponent } from './Components/topics/topics.component';
-import { HIGHLIGHT_OPTIONS, HighlightModule } from 'ngx-highlightjs';
 import { AticleService } from './Services/article.service';
 
 @NgModule({
@@ -25,17 +24,10 @@ import { AticleService } from './Services/article.service';
     TopicsComponent,
   ],
   imports: [
-    HighlightModule,
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [{
-    provide: HIGHLIGHT_OPTIONS,
-    useValue: {
-      fullLibraryLoader: () => import('highlight.js'),
-      themePath: 'assets/styles/base16/dracula.css',
-    }
-  },
+  providers: [
   AticleService],
   bootstrap: [AppComponent]
 })
