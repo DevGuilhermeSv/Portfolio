@@ -7,5 +7,4 @@ export interface IArticles
     img: string;
     content:string;
     topics: string[];
-    parameters?:string[];
 }

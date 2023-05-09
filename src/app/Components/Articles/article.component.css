@@ -38,6 +38,9 @@ code {
     font-family: 'Poppins';
     font-size: large;
 }
+pre i{
+    display: flex;
+}
 
 @media only screen and (min-width:600px) {
     #article {

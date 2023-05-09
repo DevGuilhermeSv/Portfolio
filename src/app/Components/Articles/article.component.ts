@@ -7,7 +7,7 @@ import hljs from 'highlight.js';
 @Component({
   selector: 'app-article',
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css'],
+  styleUrls: ['./article.component.css', '../../../assets/styles/base16/dracula.css'],
   encapsulation: ViewEncapsulation.None
 })
 export class ArticleComponent {
