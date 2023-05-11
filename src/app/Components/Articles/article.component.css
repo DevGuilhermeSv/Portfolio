@@ -1,13 +1,14 @@
+
 #article {
     background: #FFEFE8;
-    width: 95%;
+    width: 90vw;
     height: auto;
     margin-top: 20px;
     padding: 30px;
 }
 
 img {
-    max-width: 90vw;
+    max-width: 90%;
 }
 
 code {
@@ -44,7 +45,6 @@ pre i{
 
 @media only screen and (min-width:600px) {
     #article {
-        width: 100%;
         height: auto;
         width: 700px;
         margin-top: 0px;
