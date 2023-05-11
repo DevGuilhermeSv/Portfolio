@@ -5,10 +5,10 @@ export const articlesList: IArticles[] = [
     id:3,
     content:`
     <div class="content"> 
-    Se você estava procurando uma ferramenta para dar aquele destaque em trechos de códigos em uma pagina web, então você ja deve ter conhecido o HighLighJS.io
+    Se você estava procurando uma ferramenta para dar aquele destaque em trechos de códigos em uma pagina web, então você ja deve ter conhecido o HighLighJS
     e como é complicado trabalhar com ele em determinados cenarios... 
-    Hoje quero apresentar para vocês uma solução que eu encontrei para utilizar os recursos do HighlightJS  quando a sua aplicação depende de uma pre-compilação porem seu conteudo depende
-    de "interpolação" do HTML como é o caso domeu projeto em Angular.
+    Hoje quero apresentar para vocês uma solução que eu encontrei para utilizar os recursos do HighlightJS  quando a sua aplicação depende de uma injeção dinamica de conteúdos
+    HTML como é o caso do meu portfólio.
     Eu mesmo levei um certo tempo para conseguir implementar o HighLighJS no meu portfólio e agora quero ajudar aqueles que estão à passar pelo mesmo problema. 
     </div>
     <br>
@@ -41,14 +41,14 @@ export const articlesList: IArticles[] = [
     </div>
     <br>
 
-    <div class="sub-title">importando biblioteca</div>
+    <div class="sub-title">Importando biblioteca</div>
     <div class="content"> 
         <p>
         A melhor maneira de trabalharmos com o HighlightJs no angular é importando a biblioteca via gerenciador de pacotes. 
         para isso vamos utilizar o comando  <code> npm install highlight.js </code> ou <code> yarn add highlight.js </code>
         </p>
         <p>
-        Após a instalação vamos até o componente desejado aquele que vai carregar o documento html que você deseja e vamos importar o pacote:
+        Após a instalação vamos até o componente desejado, aquele que vai carregar o documento html que você deseja e vamos importar o pacote:
         </p>
         <pre>
         <code class="language-javascript">
@@ -73,9 +73,9 @@ export const articlesList: IArticles[] = [
     <div class="sub-title">Usando HighLighJS com HTML Dinâmico</div>
     <div class="content">
         <p> Se você estiver trabalhando em um projeto com HTML dinamico você provavelmente vai ter alguns problemas com o HighlightJS.
-        Quando trabalhamos com HTML dinamico o HighLighJS não consegue identificar o conteudo dentro das tags do HTML, dessa forma nosso codigo injetado
+        Quando trabalhamos com HTML dinamico o HighLighJS não consegue identificar o conteúdo dentro das tags do HTML, dessa forma nosso código injetado
         termina sem a formatação desejada. Uma forma de resolver esse problema é executado o comando <code> hljs.highlightAll() </code> dentro do hook <code> ngAfterViewInit() </code>.
-        Isso vai permitir que o seu HTML seja adicionado primeiro e só então o HighLighJS vai ser executado.
+        Isso vai permitir que o HighlightJs seja executado apenas após a interpretação do HTML adicionado
         </p>
 
     </div>
@@ -84,7 +84,7 @@ export const articlesList: IArticles[] = [
     <div class="sub-title">Adicionando uma folha de estilo</div>
     <div class="content"> 
         <p>
-        O HighlightJs possui diversos estilos diferentes para aplicar ao seu codigo. Alguns deles muito conhecidos como o tema do github e os temas deafult do Visual Studio Code com suas variações
+        O HighlightJs possui diversos estilos diferentes para aplicar ao seu codigo. Alguns deles muito conhecidos como o tema do github e os temas default do Visual Studio Code com suas variações
         Light e Dark.
         Você pode conferir todos os temas <a href="https://github.com/highlightjs/highlight.js/tree/main/src/styles"> clicando aqui </a> 
         </p>
@@ -109,13 +109,24 @@ export const articlesList: IArticles[] = [
     <br>
     <div class="sub-title">Como utilizar a bibliioteca</div>
     <div class="content"> 
-        <p> Se você conseguiu instalar o pacote do HighlighJS no seu projeto angular e adicionar a folha de estilos css, então seu projeto pronto para utilizar a biblioteca.</p>
-        <p> Para testar, basta adicionar o trecho de codigo dentro das tags <code> pre code </code> no arquivo .html do seu component. A detecção da linguagem acontece automaticamente mas também pode ser indicada;
-        utilize a classe no formato <code> class="language-*" </code> onde * indíca a liguâgem desejada 
+        <p> Se você conseguiu instalar o pacote do HighlighJS no seu projeto angular e adicionar a folha de estilos css, então seu projeto está pronto para utilizar a biblioteca.</p>
+        <p> Para utilizar, basta adicionar o seu trecho de código dentro das tags <code> pre code </code> no arquivo  <b>.html </b> do seu componente. A detecção da linguagem acontece 
+        automaticamente mas também pode ser indicada;
+        utilize a classe no seguinte formato <code> class="language-*" </code> onde * indíca a linguagem desejada 
         ( a lista de linguagens pode ser encontrada <a href="https://github.com/highlightjs/highlight.js/blob/main/SUPPORTED_LANGUAGES.md"> aqui </a>)
         </p>
 
         
+    </div>
+    <div class="sub-title"> Documentação oficial </div>
+    <br>
+    <div class="content">
+        <p>
+            O Projeto do HihghlightJS é open-source e pode ser encontrado no <a href="https://github.com/highlightjs/highlight.js"> repositorio oficial </a> da biblioteca no Github. 
+            Na documentação você vai encontrar mais opções de configurações do HighlightJs, incluindo informações para uso da biblioteca em navegador e tambem em servidor,
+            diversas opções de recursos e instruções para build e testes.
+            A Documentação pode ser acessada clicando <a href="https://highlightjs.readthedocs.io/en/latest/"> aqui </a>
+         </p>
     </div>
 
 
@@ -123,7 +134,7 @@ export const articlesList: IArticles[] = [
     `,
     data:"09/05/2023",
     description:"Adicione trechos de código com estilização e detecção de sintaxe de qualquer linguagem nos seus projetos angular utilizando a biblioteca HighlightJS",
-    img:"assets/icons/angular-icon.svg",
+    img:"/assets/icons/angular-icon.svg",
     title:"Implementando HighLightjs em aplicações angular",
     topics:["javascript","angular"]
   },

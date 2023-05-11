@@ -46,9 +46,16 @@ a{
     margin-left: 5px;
 }
 img{
-    max-width: 80px;
-    max-height: 80px;
     margin-right: 10px;
+}
+img.onimg{
+    width: 80px;
+    height: 80px;
+    
+}
+img.offimg{
+    width: 0;
+    height: 0;
 }
 
 /* Mobile view */

@@ -7,4 +7,7 @@ import { IArticles } from '../../Interfaces/IArticles';
 })
 export class ElementListComponent {
   @Input() article!: IArticles;
+  getImgClass():string{
+    return this.article.img ? "onimg" : "offimg";
+  }
 }
